@@ -1,0 +1,22 @@
+{
+    "name": "darcula-extra",
+    "displayName": "Darcula Extra",
+    "description": "Port of beautiful Jetbrains (IntelliJ IDEA) default dark theme \"Darcula\"",
+    "version": "0.0.1",
+    "publisher": "red2342",
+    "engines": {
+        "vscode": "^1.18.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Darcula Extra",
+                "uiTheme": "vs-dark",
+                "path": "./themes/darcula-extra-color-theme.json"
+            }
+        ]
+    }
+}
