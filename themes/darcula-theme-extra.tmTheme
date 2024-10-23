@@ -5,34 +5,37 @@
     <key>name</key>
     <string>Darcula</string>
     <key>settings</key>
-    <array>
+   	<array>
+    <dict>
+      <key>settings</key>
       <dict>
-        <key>settings</key>
-        <dict>
-          <key>background</key>
-          <string>#2B2B2B</string>
-          <key>caret</key>
-          <string>#A9B7C6</string>
-          <key>foreground</key>
-          <string>#A9B7C6</string>
-          <key>lineHighlight</key>
-          <string>#323232</string>
-          <key>selection</key>
-          <string>#214283</string>
-        </dict>
+        <key>background</key>
+        <string>#2B2B2B</string>
+        <key>caret</key>
+        <string>#A9B7C6</string>
+        <key>foreground</key>
+        <string>#A9B7C6</string>
+        <key>lineHighlight</key>
+        <string>#323232</string>
+        <key>selection</key>
+        <string>#214283</string>
       </dict>
+    </dict>
 
+    <dict>
+      <key>name</key>
+      <string>Comment</string>
+      <key>scope</key>
+      <string>comment</string>
+      <key>settings</key>
       <dict>
-        <key>name</key>
-        <string>Comment</string>
-        <key>scope</key>
-        <string>comment</string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#808080</string>
-        </dict>
+        <key>foreground</key>
+        <string>#808080</string>
       </dict>
+    </dict>
+
+
+
       <dict>
         <key>name</key>
         <string>Strings</string>
@@ -88,6 +91,7 @@
           <string>#9E7BB0</string>
         </dict>
       </dict>
+
       <!-- all keywords -->
       <dict>
         <key>name</key>
@@ -116,8 +120,10 @@
         <dict>
           <key>foreground</key>
           <string>#CC8242</string>
+          <!--
           <key>fontStyle</key>
-          <string>bold</string>
+          <string>italic</string>
+          -->
         </dict>
       </dict>
       <dict>
@@ -138,22 +144,22 @@
         </dict>
       </dict>
       <dict>
-        <key>name</key>
-        <!-- commas and semicolons are colorized to improve readability -->
-        <string>Commma and Semicolon</string>
-        <key>scope</key>
-        <string>
-          punctuation.separator.list.comma,
-          punctuation.separator.comma,
-          punctuation.terminator.statement,
-          punctuation.terminator.rule
-        </string>
-        <key>settings</key>
-        <dict>
-          <key>foreground</key>
-          <string>#CC7832</string>
+      <key>name</key>
+      <!-- commas and semicolons are colorized to improve readability -->
+      <string>Commma and Semicolon</string>
+      <key>scope</key>
+          <string>
+            punctuation.separator.list.comma,
+            punctuation.separator.comma,
+            punctuation.terminator.statement,
+            punctuation.terminator.rule
+          </string>
+          <key>settings</key>
+          <dict>
+            <key>foreground</key>
+            <string>#CC7832</string>
+          </dict>
         </dict>
-      </dict>
       <dict>
         <key>name</key>
         <!-- operator chars like '=' or '=>' are not going be highlighted at all -->
@@ -201,6 +207,10 @@
         <dict>
           <key>foreground</key>
           <string>#CC8242</string>
+          <!--
+          <key>fontStyle</key>
+          <string>italic</string>
+          -->
         </dict>
       </dict>
       <dict>
@@ -342,8 +352,10 @@
         <dict>
           <key>foreground</key>
           <string>#CC7832</string>
+          <!--
           <key>fontStyle</key>
-          <string>bold</string>
+          <string>italic</string>
+          -->
         </dict>
       </dict>
       <dict>
@@ -396,7 +408,16 @@
         <key>name</key>
         <string>TypeScript Type Declaration</string>
         <key>scope</key>
-        <string>          type-declaration,          enum-declaration,          ts.meta.type.support          ts.meta.type.entity.name,          ts.meta.class.inherited-class,          tsx.meta.type.support,          tsx.meta.type.entity.name,          tsx.meta.class.inherited-class        </string>
+        <string>
+          type-declaration,
+          enum-declaration,
+          ts.meta.type.support
+          ts.meta.type.entity.name,
+          ts.meta.class.inherited-class,
+          tsx.meta.type.support,
+          tsx.meta.type.entity.name,
+          tsx.meta.class.inherited-class
+        </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -407,7 +428,12 @@
         <key>name</key>
         <string>TypeScript Method Declaration</string>
         <key>scope</key>
-        <string>          function-declaration,          method-declaration,          method-overload-declaration,          type-fn-type-parameters        </string>
+        <string>
+          function-declaration,
+          method-declaration,
+          method-overload-declaration,
+          type-fn-type-parameters
+        </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -462,13 +488,14 @@
           <string>#7A9EC2</string>
         </dict>
       </dict>
-
-      <!-- Regex -->
       <dict>
         <key>name</key>
         <string>Regex Control Chars</string>
         <key>scope</key>
-        <string>          constant.character.escape.backslash.regexp,          keyword.control.anchor.regexp        </string>
+        <string>
+          constant.character.escape.backslash.regexp,
+          keyword.control.anchor.regexp
+        </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -501,25 +528,32 @@
           <string>#6a8759</string>
         </dict>
       </dict>
-
       <dict>
         <key>name</key>
         <string>Tag string</string>
         <key>scope</key>
-        <string>          string.template.tag,          string.template.punctuation.tag,          string.quoted.punctuation.tag,          string.quoted.embedded.tag,          string.quoted.double.tag        </string>
+        <string>
+          string.template.tag,
+          string.template.punctuation.tag,
+          string.quoted.punctuation.tag,
+          string.quoted.embedded.tag,
+          string.quoted.double.tag
+        </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
           <string>#6A8759</string>
         </dict>
       </dict>
-
-      <!-- CSS -->
       <dict>
         <key>name</key>
         <string>CSS Keyword</string>
         <key>scope</key>
-        <string>          keyword.control.at-rule.import.css,          keyword.control.at-rule.font-face.css,          keyword.other.important.css        </string>
+        <string>
+          keyword.control.at-rule.import.css,
+          keyword.control.at-rule.font-face.css,
+          keyword.other.important.css
+        </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -532,7 +566,10 @@
         <key>name</key>
         <string>CSS Property-value</string>
         <key>scope</key>
-        <string>          property-list.property-value,          property-list.constant        </string>
+        <string>
+          property-list.property-value,
+          property-list.constant
+        </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -543,7 +580,11 @@
         <key>name</key>
         <string>CSS Property variable</string>
         <key>scope</key>
-        <string>          support.type.property-name.variable.css,          support.type.property-name.variable.scss,          variable.scss        </string>
+        <string>
+          support.type.property-name.variable.css,
+          support.type.property-name.variable.scss,
+          variable.scss
+        </string>
         <!--variable.parameter.postcss-->
         <key>settings</key>
         <dict>
@@ -555,7 +596,13 @@
         <key>name</key>
         <string>CSS Property entity</string>
         <key>scope</key>
-        <string>          entity.other.attribute-name.id.css,          entity.other.attribute-name.class.css,          entity.other.attribute-name.class.scss,          entity.other.attribute-name.parent-selector-suffix.css,          entity.other.attribute-name.parent-selector-suffix.scss        </string>
+        <string>
+          entity.other.attribute-name.id.css,
+          entity.other.attribute-name.class.css,
+          entity.other.attribute-name.class.scss,
+          entity.other.attribute-name.parent-selector-suffix.css,
+          entity.other.attribute-name.parent-selector-suffix.scss
+        </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -577,7 +624,11 @@
         <key>name</key>
         <string>CSS Property-value</string>
         <key>scope</key>
-        <string>          property-list.property-value.rgb-value,          keyword.other.unit.css,          keyword.other.unit.scss        </string>
+        <string>
+          property-list.property-value.rgb-value,
+          keyword.other.unit.css,
+          keyword.other.unit.scss
+        </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -599,7 +650,10 @@
         <key>name</key>
         <string>CSS constant variables</string>
         <key>scope</key>
-        <string>          support.constant.property-value.css,          support.constant.property-value.scss        </string>
+        <string>
+          support.constant.property-value.css,
+          support.constant.property-value.scss
+        </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -610,7 +664,10 @@
         <key>name</key>
         <string>CSS Tag</string>
         <key>scope</key>
-        <string>          css.entity.name.tag,          scss.entity.name.tag        </string>
+        <string>
+          css.entity.name.tag,
+          scss.entity.name.tag
+        </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -621,7 +678,13 @@
         <key>name</key>
         <string>CSS ID, Selector</string>
         <key>scope</key>
-        <string>          meta.selector.css,          meta.property-value.css,          entity.attribute-name.id,          entity.other.attribute-name.pseudo-class.css,          entity.other.attribute-name.pseudo-element.css        </string>
+        <string>
+          meta.selector.css,
+          meta.property-value.css,
+          entity.attribute-name.id,
+          entity.other.attribute-name.pseudo-class.css,
+          entity.other.attribute-name.pseudo-element.css
+        </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -632,7 +695,10 @@
         <key>name</key>
         <string>CSS Keyword</string>
         <key>scope</key>
-        <string>          keyword.scss,          keyword.css        </string>
+        <string>
+          keyword.scss,
+          keyword.css
+        </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -643,7 +709,12 @@
         <key>name</key>
         <string>CSS Property List Value</string>
         <key>scope</key>
-        <string>          support.constant.property-value.css,          keyword.other.unit.px.css,          keyword.other.unit.em.css,          support.constant.color.w3c-standard-color-name.css        </string>
+        <string>
+          support.constant.property-value.css,
+          keyword.other.unit.px.css,
+          keyword.other.unit.em.css,
+          support.constant.color.w3c-standard-color-name.css
+        </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -676,7 +747,10 @@
         <key>name</key>
         <string>Constant Character Escape Sequences</string>
         <key>scope</key>
-        <string>          constant.character.escape.json,          constant.character.escape.ts        </string>
+        <string>
+          constant.character.escape.json,
+          constant.character.escape.ts
+        </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -685,9 +759,12 @@
       </dict>
       <dict>
         <key>name</key>
-        <string>JSON Property Name</string>
+        <string>Json Property Name</string>
         <key>scope</key>
-        <string>          punctuation.separator.dictionary.pair.json,          punctuation.separator.dictionary.key-value.json        </string>
+        <string>
+          punctuation.separator.dictionary.pair.json,
+          punctuation.separator.dictionary.key-value.json
+        </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -709,7 +786,13 @@
         <key>name</key>
         <string>Python keyword</string>
         <key>scope</key>
-        <string>          keyword.control.import.python,          keyword.control.flow.python,          punctuation.separator.arguments.python,          keyword.operator.logical.python,          storage.type.function.python        </string>
+        <string>
+          keyword.control.import.python,
+          keyword.control.flow.python,
+          punctuation.separator.arguments.python,
+          keyword.operator.logical.python,
+          storage.type.function.python
+        </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -733,7 +816,14 @@
         <key>name</key>
         <string>SQL Keyword</string>
         <key>scope</key>
-        <string>          keyword.other.sql,          keyword.other.create.sql,          storage.type.sql,          storage.modifier.sql,          keyword.other.DML.sql,          keyword.other.DML.II.sql        </string>
+        <string>
+          keyword.other.sql,
+          keyword.other.create.sql,
+          storage.type.sql,
+          storage.modifier.sql,
+          keyword.other.DML.sql,
+          keyword.other.DML.II.sql
+        </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -748,7 +838,9 @@
         <key>name</key>
         <string>Docker Keyword</string>
         <key>scope</key>
-        <string>          keyword.other.special-method.dockerfile        </string>
+        <string>
+          keyword.other.special-method.dockerfile
+        </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -758,7 +850,7 @@
         </dict>
       </dict>
 
-      <!-- Markdown -->
+      <!-- Markdown Settings -->
       <dict>
         <key>name</key>
         <string>Markup Headings</string>
@@ -808,6 +900,19 @@
           <string>#808080</string>
         </dict>
       </dict>
+      <!--
+      <dict>
+        <key>name</key>
+        <string>Markup Code Block</string>
+        <key>scope</key>
+        <string>markup.fenced_code.block</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#808080</string>
+        </dict>
+      </dict>
+      -->
       <dict>
         <key>name</key>
         <string>Markup Bold Punctuation</string>
@@ -871,7 +976,10 @@
         <key>name</key>
         <string>Markdown Link</string>
         <key>scope</key>
-        <string>          markup.underline.link.image.markdown,          markup.underline.link.markdown        </string>
+        <string>
+          markup.underline.link.image.markdown,
+          markup.underline.link.markdown
+        </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
@@ -882,16 +990,19 @@
         <key>name</key>
         <string>Markdown Link Description</string>
         <key>scope</key>
-        <string>          string.other.link.description.markdown,          string.other.link.title.markdown        </string>
+        <string>
+          string.other.link.description.markdown,
+          string.other.link.title.markdown
+        </string>
         <key>settings</key>
         <dict>
           <key>foreground</key>
           <string>#287BDE</string>
         </dict>
       </dict>
-    </array>
+	</array>
     <key>uuid</key>
-    <string>c8af526a-0769-4498-a577-648569900f50</string>
+    <string>693ee9de-bc28-4caf-9ae7-3258b05f1a4f</string>
     <key>colorSpaceName</key>
     <string>sRGB</string>
     <key>semanticClass</key>
@@ -899,6 +1010,6 @@
     <key>author</key>
     <string>red2342</string>
     <key>comment</key>
-    <string>A theme port for Jetbrains IntelliJ&apos;s Darcula color scheme. Some improvements were made!</string>
+    <string>A theme inspired by IntelliJ&apos;s Darcula color scheme. Improved and extended by red2342!</string>
   </dict>
 </plist>
