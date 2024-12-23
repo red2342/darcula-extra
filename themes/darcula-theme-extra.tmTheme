@@ -1024,6 +1024,20 @@
           <string>#287BDE</string>
         </dict>
       </dict>
+      <dict>
+        <key>name</key>
+        <!-- no highlighting for imports -->
+        <string>Import</string>
+        <key>scope</key>
+        <string>
+          storage.modifier.import.java
+        </string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#A9B7C6</string>
+        </dict>
+      </dict>
 	</array>
     <key>uuid</key>
     <string>693ee9de-bc28-4caf-9ae7-3258b05f1a4f</string>
